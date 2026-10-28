@@ -1,0 +1,347 @@
+{
+  "event": {
+    "title": "Aarohi & Rohan's Maharashtrian Wedding",
+    "type": "wedding",
+    "date": "2027-01-20",
+    "city": "Pune",
+    "guest_count": 300,
+    "total_budget_inr": 2500000,
+    "cultural_style": "Maharashtrian",
+    "theme": "Ivory, marigold, and deep saffron",
+    "summary": "A warm, tradition-led Maharashtrian wedding for 300 guests in Pune, with a morning Muhurtham, a vegetarian regional feast, a floral mandap, and practical guest-comfort and weather plans within a ₹25 lakh estimate."
+  },
+  "budget": [
+    {
+      "category": "Venue & Rentals",
+      "percentage": 25,
+      "amount_inr": 625000,
+      "rationale": "A well-connected hall with ceremony space, seating, basic furniture, power backup, and accessible guest facilities.",
+      "priority": "must"
+    },
+    {
+      "category": "Catering & Sweets",
+      "percentage": 35,
+      "amount_inr": 875000,
+      "rationale": "A vegetarian Maharashtrian meal for 300 guests with service staff, drinking water, snacks, and traditional sweets.",
+      "priority": "must"
+    },
+    {
+      "category": "Decor & Lighting",
+      "percentage": 12,
+      "amount_inr": 300000,
+      "rationale": "A floral mandap, ceremony backdrop, entry welcome, and warm lighting with a reusable decor plan.",
+      "priority": "must"
+    },
+    {
+      "category": "Photography & Videography",
+      "percentage": 8,
+      "amount_inr": 200000,
+      "rationale": "Coverage for the Muhurtham, family portraits, candid moments, and a concise edited highlight film.",
+      "priority": "must"
+    },
+    {
+      "category": "Entertainment & Sound",
+      "percentage": 5,
+      "amount_inr": 125000,
+      "rationale": "A traditional welcome ensemble, ceremony microphones, and a sound check within venue rules.",
+      "priority": "should"
+    },
+    {
+      "category": "Invitations & Favours",
+      "percentage": 3,
+      "amount_inr": 75000,
+      "rationale": "Digital-first invitations with printed cards for elders and modest locally sourced guest favours.",
+      "priority": "should"
+    },
+    {
+      "category": "Attire & Styling",
+      "percentage": 5,
+      "amount_inr": 125000,
+      "rationale": "Ceremony attire, family styling, and makeup with a trial appointment included.",
+      "priority": "should"
+    },
+    {
+      "category": "Ceremony & Rituals",
+      "percentage": 4,
+      "amount_inr": 100000,
+      "rationale": "Ritual materials, priest coordination, ceremony seating, and a family-approved Muhurtham sequence.",
+      "priority": "must"
+    },
+    {
+      "category": "Contingency & Guest Comfort",
+      "percentage": 3,
+      "amount_inr": 75000,
+      "rationale": "A reserve for guest-count variance, transport, first aid, drinking water, and day-of essentials.",
+      "priority": "nice"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "task-1",
+      "task": "Shortlist accessible venues and confirm ceremony, meal, power-backup, and sound-rule inclusions",
+      "category": "Venue",
+      "due_date": "2026-09-22",
+      "days_before_event": 120,
+      "depends_on": [],
+      "status": "todo",
+      "owner": "Family Lead"
+    },
+    {
+      "id": "task-2",
+      "task": "Confirm the Muhurtham sequence and reserve the vegetarian catering scope",
+      "category": "Catering & Rituals",
+      "due_date": "2026-10-22",
+      "days_before_event": 90,
+      "depends_on": ["task-1"],
+      "status": "todo",
+      "owner": "Family Lead"
+    },
+    {
+      "id": "task-3",
+      "task": "Book photography and videography coverage for ceremony and family portraits",
+      "category": "Photography",
+      "due_date": "2026-11-06",
+      "days_before_event": 75,
+      "depends_on": ["task-1"],
+      "status": "todo",
+      "owner": "Couple"
+    },
+    {
+      "id": "task-4",
+      "task": "Approve mandap design, floral quantities, lighting plan, and setup access",
+      "category": "Decor",
+      "due_date": "2026-11-21",
+      "days_before_event": 60,
+      "depends_on": ["task-1"],
+      "status": "todo",
+      "owner": "Family Lead"
+    },
+    {
+      "id": "task-5",
+      "task": "Send digital invitations and collect meal and accessibility requirements",
+      "category": "Invitations",
+      "due_date": "2026-12-06",
+      "days_before_event": 45,
+      "depends_on": ["task-1"],
+      "status": "todo",
+      "owner": "Co-host"
+    },
+    {
+      "id": "task-6",
+      "task": "Confirm final guest count, dietary needs, serving times, and vendor advances",
+      "category": "Catering",
+      "due_date": "2027-01-05",
+      "days_before_event": 15,
+      "depends_on": ["task-2", "task-5"],
+      "status": "todo",
+      "owner": "Family Lead"
+    },
+    {
+      "id": "task-7",
+      "task": "Pack ritual materials and confirm attire trials, transport, and family arrival plan",
+      "category": "Rituals & Attire",
+      "due_date": "2027-01-13",
+      "days_before_event": 7,
+      "depends_on": ["task-2"],
+      "status": "todo",
+      "owner": "Couple"
+    },
+    {
+      "id": "task-8",
+      "task": "Run venue walkthrough, sound check, guest welcome, Muhurtham, and meal service",
+      "category": "Event Day",
+      "due_date": "2027-01-20",
+      "days_before_event": 0,
+      "depends_on": ["task-4", "task-6", "task-7"],
+      "status": "todo",
+      "owner": "Event Coordinator"
+    }
+  ],
+  "vendors": [
+    {
+      "category": "Venue & Accommodation",
+      "what_to_book": "A hall with a ceremony area, meal service space, accessible facilities, and a written power-backup plan.",
+      "quantity_or_scope": "Comfortable seated ceremony and meal flow for 300 guests.",
+      "estimated_cost_inr": 625000,
+      "questions_to_ask": [
+        "What furniture, setup hours, cleaning, and power backup are included?",
+        "Are outside caterers and traditional sound performers permitted?",
+        "What is the cancellation and overtime policy?"
+      ],
+      "red_flags": [
+        "Verbal-only inclusions or unclear taxes",
+        "No written backup-power or rain plan"
+      ],
+      "negotiation_tip": "Request a single written package with setup access and essential furniture listed before discussing add-ons.",
+      "book_by_date": "2026-11-01"
+    },
+    {
+      "category": "Catering & Maharashtrian Sweets",
+      "what_to_book": "Vegetarian regional meal, snacks, drinking water, serving staff, and sweets approved by the family.",
+      "quantity_or_scope": "Meal service for 300 guests with a separately confirmed reserve quantity.",
+      "estimated_cost_inr": 875000,
+      "questions_to_ask": [
+        "Can the tasting and final menu be attached to the agreement?",
+        "How are dietary restrictions and food safety handled?",
+        "What is the per-guest rate for confirmed extra portions?"
+      ],
+      "red_flags": [
+        "No written menu or service schedule",
+        "Unspecified service, transport, or overtime charges"
+      ],
+      "negotiation_tip": "Agree on a transparent per-guest rate and a written method for confirming the final count.",
+      "book_by_date": "2026-11-10"
+    },
+    {
+      "category": "Decor & Floral Mandap",
+      "what_to_book": "A ceremony mandap, floral backdrop, guest welcome details, and safe warm lighting.",
+      "quantity_or_scope": "Mandap for the ceremony area, entry welcome, and simple stage lighting.",
+      "estimated_cost_inr": 300000,
+      "questions_to_ask": [
+        "Are flowers, structure, installation, and removal included?",
+        "What setup access and electrical requirements do you need?",
+        "Can reusable materials reduce the final cost?"
+      ],
+      "red_flags": [
+        "No fire-safety or electrical-load plan",
+        "Unclear substitutions for seasonal flowers"
+      ],
+      "negotiation_tip": "Ask for a line-item quote and prioritize the mandap and ceremony backdrop over low-visibility extras.",
+      "book_by_date": "2026-11-21"
+    },
+    {
+      "category": "Wedding Photography & Videography",
+      "what_to_book": "Ceremony coverage, candid photography, family portraits, and an edited highlight film.",
+      "quantity_or_scope": "Coverage sized for the ceremony and meal period for 300 guests.",
+      "estimated_cost_inr": 200000,
+      "questions_to_ask": [
+        "How many crew members and edited deliverables are included?",
+        "What are the delivery schedule and image-use terms?",
+        "Is ceremony audio captured separately?"
+      ],
+      "red_flags": [
+        "No sample deliverables or written delivery timeline",
+        "Unclear extra-hour and travel charges"
+      ],
+      "negotiation_tip": "Specify a short essential-shot list and request one bundled quote for photography and video.",
+      "book_by_date": "2026-11-06"
+    },
+    {
+      "category": "Traditional Music & Event Sound",
+      "what_to_book": "A traditional welcome ensemble, ceremony microphones, and sound support compliant with venue rules.",
+      "quantity_or_scope": "Scheduled welcome performance and clear microphone coverage for the ceremony.",
+      "estimated_cost_inr": 125000,
+      "questions_to_ask": [
+        "Who supplies microphones, speakers, and a sound technician?",
+        "What volume and finish-time rules apply at the venue?",
+        "Is a sound check included?"
+      ],
+      "red_flags": [
+        "No backup microphone or power plan",
+        "Promises that conflict with venue or local sound restrictions"
+      ],
+      "negotiation_tip": "Bundle the sound check and ceremony microphones with the performance timing in writing.",
+      "book_by_date": "2026-12-01"
+    },
+    {
+      "category": "Invitations & Guest Favours",
+      "what_to_book": "Accessible digital invitations, limited printed invitations, and modest guest favours.",
+      "quantity_or_scope": "Digital invitation for all guests and printed copies for elders who request them.",
+      "estimated_cost_inr": 75000,
+      "questions_to_ask": [
+        "Can the invitation include map, timing, and accessibility details?",
+        "What is the minimum order quantity for printed cards?",
+        "Can favours be delivered in batches before the event?"
+      ],
+      "red_flags": [
+        "Unapproved spelling or ritual wording",
+        "Large non-refundable print quantities before family sign-off"
+      ],
+      "negotiation_tip": "Use a digital-first invitation and print only the number the family confirms.",
+      "book_by_date": "2026-12-06"
+    },
+    {
+      "category": "Wedding Attire & Styling",
+      "what_to_book": "Ceremony attire support, makeup and hair styling, and a scheduled trial.",
+      "quantity_or_scope": "Styling for the couple with agreed arrival times and a family-approved trial.",
+      "estimated_cost_inr": 125000,
+      "questions_to_ask": [
+        "What products, assistants, and travel are included?",
+        "Can the trial and final look be documented?",
+        "What is the backup plan if the lead stylist is unavailable?"
+      ],
+      "red_flags": [
+        "No trial or unclear extra-person charges",
+        "Unconfirmed early-morning arrival"
+      ],
+      "negotiation_tip": "Confirm a fixed call time, trial scope, and travel costs in the booking note.",
+      "book_by_date": "2026-12-10"
+    },
+    {
+      "category": "Ceremony Priest & Ritual Materials",
+      "what_to_book": "Family-approved ceremony sequence, priest coordination, and ritual materials.",
+      "quantity_or_scope": "Muhurtham ceremony for the couple, with timings confirmed by the family.",
+      "estimated_cost_inr": 100000,
+      "questions_to_ask": [
+        "Which ritual items should the family provide?",
+        "How long is the ceremony and what setup is required?",
+        "Can the final sequence be reviewed with both families?"
+      ],
+      "red_flags": [
+        "Unclear ceremony timing or last-minute material requirements",
+        "Assuming customs without checking family preferences"
+      ],
+      "negotiation_tip": "Review the sequence and item checklist with both families before finalizing purchases.",
+      "book_by_date": "2026-12-20"
+    }
+  ],
+  "ideas": [
+    {
+      "type": "theme",
+      "title": "Marigold Muhurtham Welcome",
+      "description": "Use ivory textiles, marigold accents, and a clear welcome sign that guides elders toward comfortable seating.",
+      "tier": "standard",
+      "estimated_cost_inr": 45000
+    },
+    {
+      "type": "menu",
+      "title": "Regional Vegetarian Feast",
+      "description": "Build a family-approved Maharashtrian menu with seasonal vegetables, a traditional sweet, and clearly marked dietary options.",
+      "tier": "standard",
+      "estimated_cost_inr": 0
+    },
+    {
+      "type": "decor",
+      "title": "Reusable Ceremony Mandap",
+      "description": "Make the mandap the visual focus and use reusable cloth and foliage details to control costs and reduce waste.",
+      "tier": "budget",
+      "estimated_cost_inr": 25000
+    },
+    {
+      "type": "entertainment",
+      "title": "Traditional Welcome Moment",
+      "description": "Schedule a short traditional music welcome before the ceremony, with a sound check and an agreed finish time.",
+      "tier": "standard",
+      "estimated_cost_inr": 35000
+    },
+    {
+      "type": "favours",
+      "title": "Thoughtful Local Favour",
+      "description": "Offer a small useful or locally made favour with a simple note, or let guests contribute to a family-selected cause.",
+      "tier": "budget",
+      "estimated_cost_inr": 18000
+    }
+  ],
+  "risks": [
+    "The January morning may be cool; prepare a warm waiting area and confirm the venue's indoor ceremony option.",
+    "Guest counts can change; confirm the catering reserve quantity and per-guest overage rate in writing.",
+    "Venue sound and setup rules may constrain performance timing; confirm permissions and finish times before booking.",
+    "Ceremony timing depends on family-approved Muhurtham details; keep a named family lead available for final coordination."
+  ],
+  "assumptions": [
+    "The host has requested a Maharashtrian ceremony and a vegetarian meal; confirm any family-specific rituals and dietary needs.",
+    "The estimate assumes a Pune city venue and mid-range service choices; vendor quotes and taxes may change the total.",
+    "Digital invitations are the default, with printed copies prepared only for elders who prefer them.",
+    "A small guest-count buffer is planned, but the final guarantee and settlement terms must be agreed with vendors."
+  ]
+}
